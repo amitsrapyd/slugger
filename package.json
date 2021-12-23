@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/consumer.draft.js"
+    "dev": "nodemon src/consumer.draft.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "@ajar/marker": "^1.3.3"
   },
   "devDependencies": {
+    "jest": "^27.4.5",
     "nodemon": "^2.0.15"
   }
 }
